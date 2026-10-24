@@ -1,4 +1,4 @@
-const CACHE = 'kniyot-1100a81534';
+const CACHE = 'kniyot-9092be9ef3';
 const FILES = ['./', 'index.html', 'config.js', 'manifest.json', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
